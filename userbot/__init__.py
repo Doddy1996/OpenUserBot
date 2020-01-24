@@ -78,7 +78,7 @@ UPSTREAM_REPO_URL = os.environ.get(
     "https://github.com/mkaraniya/OpenUserBot.git")
 
 # Console verbose logging
-CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
+CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "true"))
 
 # SQL Database URI
 DB_URI = os.environ.get("DATABASE_URL", None)
@@ -101,14 +101,14 @@ WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
 LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
 
 # Anti Spambot Config
-ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "False"))
-ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
+ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "true"))
+ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "true"))
 
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+ALIVE_NAME = os.environ.get("ALIVE_NAME", ZankForza)
 
 # Time & Date - Country and Time Zone
 COUNTRY = str(os.environ.get("COUNTRY", ""))
@@ -155,7 +155,7 @@ binaries = {
 }
 
 for binary, path in binaries.items():
-    downloader = SmartDL(binary, path, progress_bar=False)
+    downloader = SmartDL(binary, path, progress_bar=true)
     downloader.start()
     os.chmod(path, 0o755)
 
