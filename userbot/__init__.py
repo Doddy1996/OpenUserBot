@@ -68,7 +68,7 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "True"))
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 
 # Heroku Credentials for updater.
-HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "False"))
+HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "True"))
 HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", None)
 HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
 
@@ -101,8 +101,8 @@ WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
 LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
 
 # Anti Spambot Config
-ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "true"))
-ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "true"))
+ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "false"))
+ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "false"))
 
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
