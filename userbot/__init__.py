@@ -55,13 +55,13 @@ API_HASH = os.environ.get("API_HASH", "bd9d1fd581c416a0d894b790f706dad2")
 
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOIwBuyKiOnz2vmSPezMY7ost9hRzNnFjYJliT5i2Of8ThM8pU7pfaluluLKWCyo1z6L-324R0dd8iT5bqnzeCtSNmb217vRav0_yKZwaWregPCtch2Kz9swB64aYS3KKtxR8HewDkzL8TpTOeaLzjzplJCzpL38alG2L1ujFVAqNe3yXNXWP_Pt6ECFWE5l--d5f56x8obXJGYwwOEohrstpRz_nPis7UqM9RRHU7UGptp-NkgXp9I7DeCVJXh6hHZhsjgy8USvo2e6YnG1Cs-dBprAzO2inS4D97ne7BtUk4AM8m0-A7tFB3187SnrnVS-rB5-wOVGudxXzIufSRE6AuWo=")
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "1275397127"))
 
 # Userbot logging feature switch.
-BOTLOG = sb(os.environ.get("BOTLOG", "False"))
+BOTLOG = sb(os.environ.get("BOTLOG", "True"))
 LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "True"))
 
 # Bleep Blop, this is a bot ;)
@@ -69,8 +69,8 @@ PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 
 # Heroku Credentials for updater.
 HEROKU_MEMEZ = sb(os.environ.get("HEROKU_MEMEZ", "True"))
-HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", None)
-HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
+HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", "zank forza")
+HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", "23d86197-4e73-4915-9a8d-31b353021360")
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
@@ -101,7 +101,7 @@ WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
 LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
 
 # Anti Spambot Config
-ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "false"))
+ANTI_SPAMBOT = sb(os.environ.get("ANTI_SPAMBOT", "true"))
 ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "false"))
 
 # Youtube API key
